@@ -1,17 +1,23 @@
-# https://codeforces.com/problemset/submission/236/308759043
+# https://codeforces.com/problemset/submission/236/308761267
 
-def solve(name: str):
+def boy_or_girl(name: str) -> str:
     """
-    >>> solve("wjmzbmr")
-    CHAT WITH HER!
-    >>> solve("xiaodao")
-    IGNORE HIM!
-    >>> solve("sevenkplus")
-    CHAT WITH HER!
+    :param name: girl or boy name
+    :return:
+    ("CHAT WITH HER!" | "IGNORE HIM!")
+
+    >>> boy_or_girl("wjmzbmr")
+    'CHAT WITH HER!'
+    >>> boy_or_girl("xiaodao")
+    'IGNORE HIM!'
+    >>> boy_or_girl("sevenkplus")
+    'CHAT WITH HER!'
     """
+
     distinct_characters = set(name)
-    print("CHAT WITH HER!") if len(distinct_characters) % 2 == 0 else print("IGNORE HIM!")
+    return "CHAT WITH HER!" if len(distinct_characters) % 2 == 0 else "IGNORE HIM!"
 
 
 if __name__ == '__main__':
-    solve(input())
+    line = input()
+    print(boy_or_girl(line))
