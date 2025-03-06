@@ -1,4 +1,4 @@
-https://codeforces.com/contest/231/submission/308219146
+# https://codeforces.com/contest/231/submission/308219146
 
 n = int(input())
 total_sure = 0
