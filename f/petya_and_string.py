@@ -1,3 +1,5 @@
+# https://codeforces.com/problemset/submission/112/309178593
+
 def petya_and_string(a: str, b: str):
     """
     :param a:
