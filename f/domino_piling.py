@@ -1,6 +1,6 @@
 # https://codeforces.com/problemset/submission/50/308761285
 
-def domino_piling(m, n)-> int:
+def domino_piling(m, n, domino_size=(2, 1)) -> int:
     """
     :param m: width maybe
     :param n: height maybe
@@ -11,8 +11,6 @@ def domino_piling(m, n)-> int:
     >>> domino_piling(3, 3)
     4
     """
-
-    domino_size = (2, 1)
     board_area = m * n
     domino_area = domino_size[0] * domino_size[1]
     min_fit = board_area // domino_area

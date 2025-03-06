@@ -1,15 +1,15 @@
-# https://codeforces.com/contest/231/submission/308219146
+# https://codeforces.com/problemset/submission/231/309166989
 
-def team(need_for_being_sure: int, problems_surety: list[int]) -> bool:
+def team(problems_surety: list[int], need_for_being_sure: int = 2) -> bool:
     """
     :return:
-    total sure
+    (True | Flase) if team sure
 
-    >>>  team(2, [1, 1 ,1])
+    >>> team([1, 1 ,1])
     True
-    >>>  team(2, [1, 1 ,0])
+    >>> team([1, 1 ,0])
     True
-    >>>  team(2, [1, 0 ,0])
+    >>> team([1, 0 ,0])
     False
     """
 
@@ -22,6 +22,6 @@ if __name__ == '__main__':
     for i in range(n):
         line = input()
         sure_flag = map(int, line.split(" "))
-        if team(2, sure_flag):
+        if team(sure_flag):
             sure_count += 1
     print(sure_count)
