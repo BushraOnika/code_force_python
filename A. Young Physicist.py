@@ -7,5 +7,7 @@ for _ in range(num):
 
 if(sum==0):
     print("YES")
+    """"
+    """
 else:
     print("NO")
